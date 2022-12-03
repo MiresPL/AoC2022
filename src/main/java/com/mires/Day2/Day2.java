@@ -33,7 +33,7 @@ public class Day2 {
 
                 points += Shapes.getOutcomePoints(you, opponent);
             }
-            System.out.println("Finalny Wynik: " + points);
+            System.out.println("Finalny Wynik: " + points); //8392
 
             System.out.println("Part 2");
 
@@ -47,7 +47,7 @@ public class Day2 {
                 points2 += getOutcomePointsFromOutcome(outcome, opponent);
             }
 
-            System.out.println("Wynik po wytłumaczeniu: " + points2);
+            System.out.println("Wynik po wytłumaczeniu: " + points2); // 10116
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
