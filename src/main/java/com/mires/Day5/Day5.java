@@ -63,7 +63,7 @@ public class Day5 {
                 stackMap.get(to - 1).addCreate(stackMap.get(from - 1).removeCreate());
             }
         }
-        System.out.print("Top Crates: ");
+        System.out.print("Top Crates: "); // JCMHLVGMG
         for (int i = 0; i < stackMap.size(); i++) {
             System.out.print(stackMap.get(i).topCreate.replaceAll(" ", "").replace("[", "").replace("]", ""));
         }
@@ -73,7 +73,7 @@ public class Day5 {
 
     protected static class Stack {
         private String topCreate = "";
-        private List<String> creates;
+        private final List<String> creates;
 
         public Stack() {
             this.creates = new ArrayList<>();

@@ -66,7 +66,7 @@ public class Day5 {
             Collections.reverse(toMove);
             stackMap.get(to - 1).addCrates(toMove);
         }
-        System.out.print("Top Crates: ");
+        System.out.print("Top Crates: "); // LVMRWSSPZ
         for (int i = 0; i < stackMap.size(); i++) {
             System.out.print(stackMap.get(i).topCreate.replaceAll(" ", "").replace("[", "").replace("]", ""));
         }
@@ -76,7 +76,7 @@ public class Day5 {
 
     protected static class Stack {
         private String topCreate = "";
-        private List<String> creates;
+        private final List<String> creates;
 
         public Stack() {
             this.creates = new ArrayList<>();
