@@ -20,9 +20,9 @@ public class Day1 {
 
             scanner.close();
             Elf elf = new Elf();
-            for (int i = 0; i < inputArray.size(); i++) {
-                if (!inputArray.get(i).isEmpty()) {
-                    elf.add(Integer.parseInt(inputArray.get(i)));
+            for (String s : inputArray) {
+                if (!s.isEmpty()) {
+                    elf.add(Integer.parseInt(s));
                 } else {
                     elfArray.add(elf);
                     elf = new Elf();
